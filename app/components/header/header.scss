@@ -1,0 +1,44 @@
+.header {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 83px 28px 98px;
+  }
+  
+  &__item {
+    @include text;
+    color: $color-main;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-main;
+    margin-top: 7px;
+  }
+  
+  &__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 78px;
+    
+    &-img {
+      width: 57px;
+      height: 57px;
+    }
+    
+    &-text {
+      @include text;
+      margin-left: 9px;
+      color: $color-grey;
+      font-family: 'Geogrotesque', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+  }
+}

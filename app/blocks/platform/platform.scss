@@ -1,0 +1,107 @@
+.platform {
+  display: block;
+  
+  &__scheme {
+    text-align: center;
+    margin-top: 102px;
+    
+    img {
+      width: 100%;
+      max-width: 1080px;
+      margin-left: 62px;
+    }
+  }
+  
+  &__content {
+    margin: -34px 92px 0;
+    padding-right: 15px;
+  }
+  
+  &__text {
+    @include text-large;
+    color: $color-main;
+    
+    &-line {
+      display: block;
+      
+      &_right {
+        text-align: right;
+      }
+    }
+    
+    &-span {
+      font-weight: 700;
+      
+      &_xlarge {
+        @include textspan-4;
+      }
+      
+      &_large {
+        @include textspan-5;
+      }
+      
+      &_big {
+        @include textspan-6;
+      }
+    }
+    
+    &_sp-l {
+      padding-left: 295px;
+    }
+    
+    &_sp-r {
+      margin-top: 14px;
+      padding-right: 73px;
+    }
+    
+    &_lv2 {
+      margin-top: 12px;
+      margin-left: 144px;
+    }
+    
+    &_lv3 {
+      margin-top: 28px;
+      margin-left: 270px;
+    }
+  }
+  
+  &__number {
+    @include textspan-3;
+    color: $color-black;
+    display: inline-block;
+    
+    &_sup {
+      vertical-align: top;
+      margin-top: -10px;
+    }
+  }
+  
+  &__characteristic {
+    display: flex;
+    margin-top: 39px;
+    
+    .platform__text {
+      flex: 1;
+    }
+    
+    & + & {
+      margin-top: 2px;
+    }
+    
+    & + .platform__text {
+      margin-top: 40px;
+    }
+  }
+  
+  &__unit {
+    @include textspan-1;
+    color: $color-lightgrey;
+    flex-shrink: 0;
+    margin-right: 20px;
+    
+    &_right {
+      margin-right: -8px;
+      margin-left: 8px;
+    }
+  }
+}

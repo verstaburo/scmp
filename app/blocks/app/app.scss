@@ -1,0 +1,44 @@
+.app {
+  display: block;
+  
+  &__wrapper {
+    position: relative;
+    min-height: 416px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 160px;
+    margin-left: 74px;
+    margin-right: 93px;
+  }
+  
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 640px;
+    height: 416px;
+  }
+  
+  &__content {
+    text-align: right;
+    padding-bottom: 12px;
+    max-width: 630px;
+  }
+  
+  &__text {
+    @include text-xlarge;
+    
+    &-span {
+      @include textspan-2;
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    & + & {
+      margin-top: 38px;
+    }
+  }
+}

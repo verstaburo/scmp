@@ -1,0 +1,5 @@
+mixin section(heading)
+  +b.section&attributes(attributes)
+    +e.container.container
+      +e.H2.heading!= heading
+      block

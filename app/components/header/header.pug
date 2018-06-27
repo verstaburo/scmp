@@ -1,0 +1,9 @@
+mixin header()
+  +b.HEADER.header&attributes(attributes)
+    .container
+      +e.wrapper
+        +e.A(href='#').item Menu
+        +e.A(href='#').brand
+          +e.IMG(src='assets/images/logo.svg').brand-img
+          +e.SPAN.brand-text Corp
+        +e.A(href='#').item Рус

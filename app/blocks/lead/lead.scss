@@ -1,0 +1,37 @@
+.lead {
+  display: block;
+  text-align: center;
+  position: relative;
+  
+  &__container {
+    padding: 141px 0;
+    min-height: 717px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  &__wrapper {
+    position: relative;
+  }
+  
+  &__subheading {
+    @include heading-2;
+    color: $color-black2;
+    font-family: $font-second;
+  }
+  
+  &__heading {
+    @include heading-1;
+    color: $color-black2;
+    font-family: $font-second;
+    text-transform: uppercase;
+  }
+}

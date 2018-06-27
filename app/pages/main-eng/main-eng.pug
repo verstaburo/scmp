@@ -1,0 +1,24 @@
+extends ../../layouts/default
+
+block head
+  - var pageTitle = 'Versta Project Template'
+
+block content
+  +b.main.main-eng
+    +header()
+    +lead()
+    +section('A digital platform that manages the processes of&nbsp;the material world, based on the new generation information technologies, including blockchain.')._about
+      +about()
+    +section('Advantages of SCM Platform:')._advantages
+      +e.IMG(src='assets/images/sidebg.svg').side-img._left
+      +advantages()
+    +section('Smart City Management Platform:')._platform
+      +platform()
+    +section('Main Control Program:')._program
+      +e.IMG(src='assets/images/cube.svg').small-img._right
+      +e.IMG(src='assets/images/sidebg.svg').side-img._right
+      +program()
+    +section('One app controls everything')._app
+      +app()
+    +bottom()
+    +footer()

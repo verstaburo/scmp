@@ -3,8 +3,8 @@
 // ##########
 // Базовые настройки сетки сайта
 // ##########
-$container-width: 960px; // Максимальная ширина контейнера контента
-$container-padding: 20px; // Отступы слева и справа у контейнера
+$container-width: 1400px; // Максимальная ширина контейнера контента
+$container-padding: 28px; // Отступы слева и справа у контейнера
 $grid-container-width: 100%; // Ширина контейнера сетки
 $grid-cols: 12; // Количество колонок в сетке
 $grid-gap: 20px; // Расстояние между колонками
@@ -21,11 +21,19 @@ $breakpoints: (
 // ##########
 // Цвета
 // ##########
-$color-basic: black; // Основной цвет текста (применяется к body)
-$color-placeholder: #777; // Основной цвет для placeholder
-$color-input: black; // Основной цвет input, select и textarea
-$color-main: #2252d8; // Основной фирменный цвет
-$color-border: #ccc; // Основной цвет границ таблиц, секций
+$color-basic: #595959; // Основной цвет текста (применяется к body)
+$color-placeholder: $color-basic; // Основной цвет для placeholder
+$color-input: $color-basic; // Основной цвет input, select и textarea
+$color-main: #444444; // Основной фирменный цвет
+$color-border: $color-basic; // Основной цвет границ таблиц, секций
+$color-bg: #fafafa;
+$color-black: #000000;
+$color-black2: #010101;
+$color-grey: #6d6e71;
+$color-grey2: #696d6d;
+$color-lightgrey: #dbdbdb;
+$color-blue: #3e88a6;
+
 
 // ##########
 // Transitions
@@ -35,5 +43,5 @@ $ease-main: .3s ease;
 // ##########
 // Шрифты
 // ##########
-$font-main: Arial, sans-serif; // Основной шрифт сайта
-$font-second: Times New Roman, sans-serif; // Дополнительный шрифт
+$font-main: 'Roboto Slab', Georgia, serif; // Основной шрифт сайта
+$font-second: 'PFHandbookPro', Arial, sans-serif; // Дополнительный шрифт

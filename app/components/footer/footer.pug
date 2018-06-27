@@ -1,0 +1,11 @@
+mixin footer()
+  +b.footer&attributes(attributes)
+    .container
+      +e.wrapper
+        +e.P.title Our partners
+        +e.partners
+          +e.A(href='#').partner
+            img(src='assets/images/partner1.png')
+          +e.A(href='#').partner
+            img(src='assets/images/partner2.png')
+        +e.P.copyright © 2018 Smart City Technologies Corporation LLC
