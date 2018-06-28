@@ -1,5 +1,5 @@
 .lead {
-  display: block;
+  display: flex;
   text-align: center;
   position: relative;
   
@@ -19,6 +19,7 @@
   }
   
   &__wrapper {
+    width: 100%;
     position: relative;
     padding-right: 16px;
     min-height: 310px;

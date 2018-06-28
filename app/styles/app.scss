@@ -17,6 +17,12 @@
   border-right: 1px solid $color-lightgrey;
   margin: 0 auto;
   overflow: hidden;
+  box-sizing: border-box;
+  
+  @media only screen and (max-width: 1400px) {
+    border-left: 0;
+    border-right: 0;
+  }
 }
 
 .container {
