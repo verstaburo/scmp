@@ -1,0 +1,10 @@
+extends ../../layouts/default
+
+block head
+  - var pageTitle = 'About Eng'
+
+block content
+  +b.page.about-page
+    +header-big('eng')
+    +about('eng')
+    +bottom()

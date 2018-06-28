@@ -1,5 +1,5 @@
-mixin app()
-  +b.app&attributes(attributes)
+mixin app-eng()
+  +b.app._eng&attributes(attributes)
     +e.wrapper
       +e.IMG(src='assets/images/phone.png').img
       +e.content
@@ -11,3 +11,21 @@ mixin app()
         +e.P.text From the climate in your appartment
           br
           | to financial and real estate transactions.
+
+mixin app-rus()
+  +b.app._rus&attributes(attributes)
+    +e.wrapper
+      +e.IMG(src='assets/images/phone.png').img
+      +e.content
+        +e.P.text
+          +e.SPAN.text-span Управление
+          | всеми услугами
+          br
+          | и системами Умного города
+          br
+          | через единое приложение
+        +e.P.text От температуры в квартире
+          br
+          | до финансовых операций
+          br
+          | и сделок с недвижимостью

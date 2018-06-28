@@ -41,4 +41,23 @@
       margin-top: 38px;
     }
   }
+  
+  &_rus {
+    
+    .app {
+      
+      &__wrapper {
+        margin-top: 100px;
+      }
+      
+      &__content {
+        padding-right: 20px;
+        padding-bottom: 28px;
+      }
+      
+      &__text-span {
+        margin-bottom: -8px;
+      }
+    }
+  }
 }

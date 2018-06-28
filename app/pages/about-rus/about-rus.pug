@@ -1,0 +1,10 @@
+extends ../../layouts/default
+
+block head
+  - var pageTitle = 'About Rus'
+
+block content
+  +b.page.about-page
+    +header-big('rus')
+    +about('rus')
+    +bottom()

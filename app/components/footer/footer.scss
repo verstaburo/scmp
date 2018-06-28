@@ -13,7 +13,7 @@
   }
   
   &__partners {
-    margin: 27px 2px;
+    margin: 27px 2px 15px;
   }
   
   &__partner {
@@ -26,6 +26,6 @@
     @include text-xsmall;
     color: $color-main;
     text-align: right;
-    margin-top: 160px;
+    margin-right: 14px;
   }
 }

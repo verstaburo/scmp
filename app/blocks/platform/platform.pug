@@ -1,15 +1,17 @@
-mixin platform()
+mixin platform-eng()
   +b.platform&attributes(attributes)
-    +e.scheme
-      img(src='assets/images/scheme2.svg')
-    +e.content
+    +e.scheme._eng
+      img(src='assets/images/scheme2eng.svg')
+    +e.content._eng
       +e.P.text
         +e.SPAN.text-line
           +e.SPAN.text-span HIGH SPEED
           |  object-oriented programming IT-platform, comparable in speed to 
         +e.SPAN.text-line._right platforms i.e. Visa, Google, Facebook, Mongo DB
       +e.P.text
-        +e.SPAN.text-line._right Performance up to 
+        +e.SPAN.text-line._right
+          +e.SPAN.text-span Performance
+          |  up to 
           +e.SPAN.number 10.000
           |  transactions/s.
       +e.P.text
@@ -55,3 +57,60 @@ mixin platform()
           +e.SPAN.text-span._big SCMP
           |  is a complete platform for the 
           +e.SPAN.text-span._big Internet of things.
+
+mixin platform-rus()
+  +b.platform&attributes(attributes)
+    +e.scheme._rus
+      img(src='assets/images/scheme2rus.svg')
+    +e.content._rus
+      +e.P.text
+        +e.SPAN.text-line
+          +e.SPAN.text-span Высокоскоростная
+          |  объектно-ориентированная IT-платформа,
+          br
+          |  сравнимая по скорости с платформами Visa, Google, Facebook, Mongo DB.
+      +e.P.text
+        +e.SPAN.text-line._right
+          +e.SPAN.text-span Быстродействие
+          |  до 
+          +e.SPAN.number 10.000
+          |  транзакций/с.
+      +e.P.text
+        +e.SPAN.text-line
+          +e.SPAN.text-span Универсальность.
+          |  Подходит для любых типов объектов.
+      +e.characteristic
+        +e.P.unit XML
+        +e.P.text
+          +e.SPAN.text-line
+            +e.SPAN.text-span Совместимость
+            br
+            |  с большинством современных программных продуктов и форматов (XML e.t.c.)
+      +e.characteristic
+        +e.P.text
+          +e.SPAN.text-line._right
+            +e.SPAN.text-span Масштабируемость
+            br
+            |  для описания одного обьяекта можно использовать до 1 гигабайта данных
+        +e.P.unit._right 1GB
+      +e.P.text
+        +e.SPAN.text-line
+          +e.SPAN.text-span Существующая библиотека
+          |  уже включает            
+          +e.SPAN.number 250.000
+          |  классов объектов.
+      +e.P.text._sp-l
+        +e.SPAN.text-line
+          +e.SPAN.text-span Распределенная модель
+          |  сохранения данных с&nbsp;многократным копированием (облако данных).
+      +e.P.text._sp-r
+        +e.SPAN.text-line Блок-чейн технология 
+          +e.SPAN.text-span SCMP
+          |  не использует майнинг, что приводит к экономии энергии и ресурсов.
+      +e.P.text._lv2
+        +e.SPAN.text-line
+          +e.SPAN.text-span._xlarge логгирование
+          |  всей информации.
+      +e.P.text._lv3
+        +e.SPAN.text-line Является полной платформой для 
+          +e.SPAN.text-span._xlarge интернета вещей.

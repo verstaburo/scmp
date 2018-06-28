@@ -86,9 +86,9 @@
     }
     
     &_lv4 {
-      top: 488px;
+      top: 486px;
       left: 0;
-      right: calc(50% + 250px);
+      right: calc(50% + 253px);
     }
     
     &_lv5 {
@@ -107,6 +107,56 @@
       top: 870px;
       left: calc(50% + 180px);
       right: 0;
+    }
+  }
+  
+  &_rus {
+    
+    .program {
+      
+      &__desc {
+        margin-top: 90px;
+      }
+      
+      &__scheme {
+        margin-top: 98px;
+      }
+      
+      &__point {
+        
+        &-text {
+          margin-top: 0;
+        }
+        
+        &_lv1 {
+          top: 97px;
+          right: calc(50% + 257px);
+        }
+        
+        &_lv2 {
+          top: 301px;
+        }
+        
+        &_lv3 {
+          top: 324px;
+        }
+        
+        &_lv4 {
+          top: 496px;
+        }
+        
+        &_lv5 {
+          top: 551px;
+        }
+        
+        &_lv6 {
+          top: 674px;
+        }
+        
+        &_lv7 {
+          top: 802px;
+        }
+      }
     }
   }
 }

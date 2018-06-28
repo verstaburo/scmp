@@ -6,7 +6,7 @@
   &__heading {
     @include heading-4;
     color: $color-blue;
-    max-width: 980px;
+    margin: 0 135px;
   }
   
   &__side-img {
@@ -15,6 +15,7 @@
     opacity: .33;
     width: 1265px;
     height: 1285px;
+    pointer-events: none;
     
     &_left {
       right: 100%;
@@ -38,8 +39,9 @@
     }
   }
   
-  &_about {
-    padding-bottom: 70px;
+  &_desc {
+    padding-bottom: 52px;
+    min-height: 1250px;
     
     .section__heading {
       margin: 0 100px;
@@ -49,18 +51,11 @@
   
   &_advantages {
     padding-bottom: 100px;
-    
-    .section__heading {
-      margin: 0 135px;
-    }
+    min-height: 710px;
   }
   
   &_platform {
-    padding-bottom: 85px;
-    
-    .section__heading {
-      margin: 0 135px;
-    }
+    padding-bottom: 83px;
   }
   
   &_program {
@@ -76,7 +71,6 @@
     
     .section__heading {
       @include heading-3;
-      margin: 0 135px;
     }
   }
 }

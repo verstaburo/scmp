@@ -1,9 +1,29 @@
-mixin header()
+mixin header(lang)
   +b.HEADER.header&attributes(attributes)
     .container
       +e.wrapper
-        +e.A(href='#').item Menu
-        +e.A(href='#').brand
+        +e.left
+          +e.A(href='#').item Menu
+        +e.brand
           +e.IMG(src='assets/images/logo.svg').brand-img
           +e.SPAN.brand-text Corp
-        +e.A(href='#').item Рус
+        +e.right
+          if lang === 'eng'
+            +e.A(href='main-rus.html').item Рус
+          if lang === 'rus'
+            +e.A(href='main-eng.html').item Eng
+
+mixin header-big(lang)
+  +b.HEADER.header._big&attributes(attributes)
+    .container
+      +e.wrapper
+        +e.left
+          +e.A(href='#').item Menu
+        +e.brand
+          +e.IMG(src='assets/images/logo.svg').brand-img
+          +e.SPAN.brand-text Smart City Technologies Corporation
+        +e.right
+          if lang === 'eng'
+            +e.A(href='about-rus.html').item Рус
+          if lang === 'rus'
+            +e.A(href='about-eng.html').item Eng

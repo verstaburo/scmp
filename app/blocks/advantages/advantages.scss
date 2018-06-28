@@ -8,9 +8,13 @@
   
   &__item {
     @include text;
-    
-    & + & {
-      margin-top: 26px;
-    }
+  }
+  
+  &_eng &__item + &__item {
+    margin-top: 26px;
+  }
+  
+  &_rus &__item + &__item {
+    margin-top: 14px;
   }
 }

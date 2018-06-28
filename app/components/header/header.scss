@@ -13,19 +13,26 @@
     padding: 28px 83px 28px 98px;
   }
   
+  &__left, &__right {
+    flex: 1;
+  }
+  
+  &__right {
+    text-align: right;
+  }
+  
   &__item {
     @include text;
     color: $color-main;
     text-transform: uppercase;
     border-bottom: 1px solid $color-main;
-    margin-top: 7px;
   }
   
   &__brand {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 78px;
+    margin-right: 52px;
     
     &-img {
       width: 57px;
@@ -39,6 +46,37 @@
       font-family: 'Geogrotesque', Arial, sans-serif;
       text-transform: uppercase;
       letter-spacing: .05em;
+    }
+  }
+  
+  &_big {
+    
+    .header {
+      
+      &__wrapper {
+        align-items: flex-start;
+        padding: 58px 73px 28px 68px;
+      }
+      
+      &__brand {
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+        margin-right: -24px;
+        
+        &-img {
+          width: 110px;
+          height: 110px;
+        }
+        
+        &-text {
+          display: block;
+          @include text-medium;
+          margin-top: 19px;
+          margin-left: 7px;
+          letter-spacing: .075em;
+        }
+      }
     }
   }
 }

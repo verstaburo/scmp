@@ -1,11 +1,17 @@
-mixin footer()
+mixin footer(lang)
   +b.footer&attributes(attributes)
     .container
       +e.wrapper
-        +e.P.title Our partners
+        if lang === 'eng'
+          +e.P.title Our partners
+        if lang === 'rus'
+          +e.P.title Наши партнеры
         +e.partners
           +e.A(href='#').partner
             img(src='assets/images/partner1.png')
           +e.A(href='#').partner
             img(src='assets/images/partner2.png')
-        +e.P.copyright © 2018 Smart City Technologies Corporation LLC
+        if lang === 'eng'
+          +e.P.copyright © 2018 Smart City Technologies Corporation LLC
+        if lang === 'rus'
+          +e.P.copyright © 2018 ООО «Смарт Сити Технолоджис Корпорейшн»

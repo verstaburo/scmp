@@ -1,0 +1,24 @@
+extends ../../layouts/default
+
+block head
+  - var pageTitle = 'Main Rus'
+
+block content
+  +b.page.main
+    +header('rus')
+    +lead('rus')
+    +section('Цифровая платформа, управляющая<br> процессами материального мира<br> базирующаяся на IT-технологиях нового поколения,<br> включая Блок-чейн')._desc
+      +desc-rus()
+    +section('Преимущества  SCM Платформы:')._advantages
+      +e.IMG(src='assets/images/sidebg.svg').side-img._left
+      +advantages-rus()
+    +section('Умный Город - платформа управления:')._platform
+      +platform-rus()
+    +section('Главная управляющая программа')._program
+      +e.IMG(src='assets/images/cube.svg').small-img._right
+      +e.IMG(src='assets/images/sidebg.svg').side-img._right
+      +program-rus()
+    +section('Единое приложение для конечного<br> пользователя')._app
+      +app-rus()
+    +bottom()
+    +footer('rus')

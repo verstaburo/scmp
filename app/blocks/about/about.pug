@@ -1,8 +1,59 @@
-mixin about()
+mixin about(lang)
   +b.about&attributes(attributes)
-    +e.scheme
-      img(src='assets/images/scheme1.svg')
-    +e.P.text An open, object-oriented computing platform with a distributed integrated control system in the fog computing framework. Objects of different classes (processes, institutions, organizations, regulatory documentation, devices, etc.) are combined in&nbsp;this&nbsp;network and are coexisting within it.
-    +e.P.text By backing up copies of the objects that interact with each other, the system creates patterns and makes modeling and forecasting possible.
-    +e.P.text The platform is distributed on a number of small servers, which lowers the requirements for computing resources of each single server and increase security through multiple copies and distributed storage.
-    +e.P.text SCMP is based on the hardware nodes with installed SCMP servers that have the blockchain function enabled, which in fact creates a material basis for the Blockchain technology.
+    +e.container.container
+      +e.row
+        +e.item
+          +e.image
+            img(src='assets/images/pers1.png')
+          +e.P.title Константин Синяговский
+          +e.P.subtitle генеральный директор
+        +e.item
+          +e.image
+            img(src='assets/images/pers2.png')
+          +e.P.title Валентин Порженко
+          +e.P.subtitle заместитель генерального директора по корпоративному управлению
+        +e.item
+          +e.image
+            img(src='assets/images/pers3.png')
+          +e.P.title Василий Касаточкин
+          +e.P.subtitle технический директор
+        +e.item
+          +e.image
+            img(src='assets/images/pers4.png')
+          +e.P.title Равиль Турсунов
+          +e.P.subtitle исполнительный директор
+      if lang === 'eng'
+        +e.row._simple
+          +e.P.heading Совет директоров:
+          +e.item
+            +e.P.title Сергей Назаров
+          +e.item
+            +e.P.title Александр Кравченко
+          +e.item
+            +e.P.title Сергей Камолов
+          +e.item
+            +e.P.title Вадим Соглаев
+      if lang === 'rus'
+        +e.row._small
+          +e.P.heading Совет директоров:
+          +e.item
+            +e.image
+              img(src='assets/images/pers5.png')
+            +e.P.title Сергей Назаров
+          +e.item
+            +e.image
+              img(src='assets/images/pers6.png')
+            +e.P.title Александр Кравченко
+          +e.item
+            +e.image
+              img(src='assets/images/pers7.png')
+            +e.P.title Сергей Камолов
+          +e.item
+            +e.image
+              img(src='assets/images/pers8.png')
+            +e.P.title Вадим Соглаев
+      +e.contacts
+        +e.P.address 123317 Москва, Пресненская наб. 12, офис 4405
+          br
+          | +7 925 772 06 30
+        +e.A(href='mailto:info@smart-ctc.ru').mail info@smart-ctc.ru

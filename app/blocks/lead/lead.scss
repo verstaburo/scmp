@@ -4,7 +4,7 @@
   position: relative;
   
   &__container {
-    padding: 141px 0;
+    padding: 141px 0 73px;
     min-height: 717px;
     display: flex;
     justify-content: center;
@@ -20,6 +20,8 @@
   
   &__wrapper {
     position: relative;
+    padding-right: 16px;
+    min-height: 310px;
   }
   
   &__subheading {

@@ -1,15 +1,15 @@
 // Текстовые стили, используемые на сайте
 
 @mixin heading-1 {
-  font-size: 150px;
+  font-size: 156px;
   font-weight: 400;
-  letter-spacing: .05em;
+  letter-spacing: .03em;
 }
 
 @mixin heading-2 {
-  font-size: 58px;
+  font-size: 61px;
   font-weight: 400;
-  letter-spacing: .05em;
+  letter-spacing: .03em;
 }
 
 @mixin heading-3 {
@@ -74,12 +74,13 @@
 @mixin text-xsmall {
   font-size: 16px;
   font-weight: 700;
+  letter-spacing: -.01em;
 }
 
 @mixin textspan-1 {
-  font-size: 117px;
+  font-size: 120px;
   font-weight: 700;
-  letter-spacing: .05em;
+  letter-spacing: .04em;
   line-height: .8;
 }
 
@@ -89,9 +90,10 @@
 }
 
 @mixin textspan-3 {
-  font-size: 63px;
+  font-size: 68px;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.15;
+  letter-spacing: -.045em;
 }
 
 @mixin textspan-4 {

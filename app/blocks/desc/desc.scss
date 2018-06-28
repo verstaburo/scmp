@@ -1,0 +1,33 @@
+.desc {
+  display: block;
+  
+  &__scheme {
+    text-align: center;
+    
+    img {
+      width: 100%;
+    }
+    
+    &_eng img {
+      max-width: 1080px;
+      margin: 83px 0 0 40px;
+    }
+    
+    &_rus img {
+      max-width: 950px;
+      margin: 94px 57px 61px 0;
+    }
+  }
+  
+  &__text {
+    @include text-big;
+    color: $color-black2;
+    margin: 0 96px;
+    margin-top: 15px;
+    padding-left: 18px;
+    
+    & + & {
+      margin-top: 31px;
+    }
+  }
+}
