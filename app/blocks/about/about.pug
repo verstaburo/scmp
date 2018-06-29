@@ -1,4 +1,52 @@
-mixin about(lang)
+mixin about-eng(lang)
+  +b.about&attributes(attributes)
+    +e.container.container
+      +e.row
+        +e.item
+          +e.image
+            img(src='assets/images/pers1.png')
+          +e.P.title Konstantin Siniagovskii
+          +e.P.subtitle C.E.O., Founder
+        +e.item
+          +e.image
+            img(src='assets/images/pers2.png')
+          +e.P.title Valentin Porzhenko
+          +e.P.subtitle Chief Legal Officer
+        +e.item
+          +e.image
+            img(src='assets/images/pers3.png')
+          +e.P.title Vasilii Kasatochkin
+          +e.P.subtitle Chief Technical Officer
+        +e.item
+          +e.image
+            img(src='assets/images/pers4.png')
+          +e.P.title Ravil Tursunov
+          +e.P.subtitle Chief Operational Officer
+      +e.row._small
+        +e.P.heading Board of Directors:
+        +e.item
+          +e.image
+            img(src='assets/images/pers5.png')
+          +e.P.title Sergei Nazarov
+        +e.item
+          +e.image
+            img(src='assets/images/pers6.png')
+          +e.P.title Alexandr Kravchenko
+        +e.item
+          +e.image
+            img(src='assets/images/pers7.png')
+          +e.P.title Sergei Kamolov
+        +e.item
+          +e.image
+            img(src='assets/images/pers8.png')
+          +e.P.title Vadim Soglaev
+      +e.contacts
+        +e.P.address 123317 Moscow, Presnyenskaya nab. 12, office 4405
+          br
+          | +7 925 772 06 30
+        +e.A(href='mailto:info@smart-ctc.ru').mail info@smart-ctc.ru
+
+mixin about-rus(lang)
   +b.about&attributes(attributes)
     +e.container.container
       +e.row
@@ -22,36 +70,24 @@ mixin about(lang)
             img(src='assets/images/pers4.png')
           +e.P.title Равиль Турсунов
           +e.P.subtitle исполнительный директор
-      if lang === 'eng'
-        +e.row._simple
-          +e.P.heading Совет директоров:
-          +e.item
-            +e.P.title Сергей Назаров
-          +e.item
-            +e.P.title Александр Кравченко
-          +e.item
-            +e.P.title Сергей Камолов
-          +e.item
-            +e.P.title Вадим Соглаев
-      if lang === 'rus'
-        +e.row._small
-          +e.P.heading Совет директоров:
-          +e.item
-            +e.image
-              img(src='assets/images/pers5.png')
-            +e.P.title Сергей Назаров
-          +e.item
-            +e.image
-              img(src='assets/images/pers6.png')
-            +e.P.title Александр Кравченко
-          +e.item
-            +e.image
-              img(src='assets/images/pers7.png')
-            +e.P.title Сергей Камолов
-          +e.item
-            +e.image
-              img(src='assets/images/pers8.png')
-            +e.P.title Вадим Соглаев
+      +e.row._small
+        +e.P.heading Совет директоров:
+        +e.item
+          +e.image
+            img(src='assets/images/pers5.png')
+          +e.P.title Сергей Назаров
+        +e.item
+          +e.image
+            img(src='assets/images/pers6.png')
+          +e.P.title Александр Кравченко
+        +e.item
+          +e.image
+            img(src='assets/images/pers7.png')
+          +e.P.title Сергей Камолов
+        +e.item
+          +e.image
+            img(src='assets/images/pers8.png')
+          +e.P.title Вадим Соглаев
       +e.contacts
         +e.P.address 123317 Москва, Пресненская наб. 12, офис 4405
           br

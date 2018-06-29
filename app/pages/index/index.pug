@@ -1,13 +1,24 @@
 extends ../../layouts/default
 
 block head
-  - var pageTitle = 'Versta Project Template'
+  - var pageTitle = 'Main'
 
 block content
-  +b.sitemap
-    .container
-      +e.list
-        +link(href="main-eng.html") Main Eng (main-eng.html)
-        +link(href="main-rus.html") Main Rus (main-rus.html)
-        +link(href="about-eng.html") About Eng (about-eng.html)
-        +link(href="about-rus.html") About Rus (about-rus.html)
+  +b.page.main
+    +header('eng')
+    +lead('eng')
+    +section('A digital platform that manages the processes<br> of the material world, based on the new generation<br> information technologies, including blockchain.')._about
+      +desc-eng()
+    +section('Advantages of SCM Platform:')._advantages
+      +e.IMG(src='assets/images/sidebg.svg').side-img._left
+      +advantages-eng()
+    +section('Smart City Management Platform:')._platform
+      +platform-eng()
+    +section('Main Control Program:')._program
+      +e.IMG(src='assets/images/cube.svg').small-img._right
+      +e.IMG(src='assets/images/sidebg.svg').side-img._right
+      +program-eng()
+    +section('One app controls everything')._app
+      +app-eng()
+    +bottom()
+    +footer('eng')

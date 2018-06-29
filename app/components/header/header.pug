@@ -3,27 +3,33 @@ mixin header(lang)
     .container
       +e.wrapper
         +e.left
-          +e.A(href='#').item Menu
+          if lang === 'eng'
+            +e.A(href='about.html').item About us
+          if lang === 'rus'
+            +e.A(href='about_rus.html').item О нас
         +e.brand
           +e.IMG(src='assets/images/logo.svg').brand-img
           +e.SPAN.brand-text Corp
         +e.right
           if lang === 'eng'
-            +e.A(href='main-rus.html').item Рус
+            +e.A(href='rus.html').item Рус
           if lang === 'rus'
-            +e.A(href='main-eng.html').item Eng
+            +e.A(href='index.html').item Eng
 
 mixin header-big(lang)
   +b.HEADER.header._big&attributes(attributes)
     .container
       +e.wrapper
         +e.left
-          +e.A(href='#').item Menu
+          if lang === 'eng'
+            +e.A(href='index.html').item Main
+          if lang === 'rus'
+            +e.A(href='rus.html').item Назад
         +e.brand
           +e.IMG(src='assets/images/logo.svg').brand-img
           +e.SPAN.brand-text Smart City Technologies Corporation
         +e.right
           if lang === 'eng'
-            +e.A(href='about-rus.html').item Рус
+            +e.A(href='about_rus.html').item Рус
           if lang === 'rus'
-            +e.A(href='about-eng.html').item Eng
+            +e.A(href='about.html').item Eng
