@@ -12,7 +12,8 @@
 @import '../pages/**/*';
 
 .page {
-  width: $container-width;
+  width: 100%;
+  max-width: $container-width;
   border-left: 1px solid $color-lightgrey;
   border-right: 1px solid $color-lightgrey;
   margin: 0 auto;
@@ -32,6 +33,11 @@
   margin: 0 auto;
   max-width: 100%;
   box-sizing: border-box;
+  
+  @include screen('tablet-small') {
+    padding-left: $container-padding-mobile;
+    padding-right: $container-padding-mobile;
+  }
 }
 
 .js-sr {

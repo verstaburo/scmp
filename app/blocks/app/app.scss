@@ -10,6 +10,20 @@
     margin-top: 160px;
     margin-left: 74px;
     margin-right: 93px;
+    
+    @include screen('desktop') {
+      margin: 60px 30px 0;
+      min-height: 0;
+      justify-content: flex-start;
+    }
+    
+    @include screen('tablet-wide') {
+      margin: 30px 0 0;
+    }
+    
+    @include screen('tablet-small') {
+      margin-top: 20px;
+    }
   }
   
   &__img {
@@ -20,12 +34,21 @@
     margin: auto;
     width: 640px;
     height: 416px;
+    
+    @include screen('desktop') {
+      display: none;
+    }
   }
   
   &__content {
     text-align: right;
     padding-bottom: 12px;
     max-width: 630px;
+    
+    @include screen('desktop') {
+      text-align: left;
+      max-width: 100%;
+    }
   }
   
   &__text {
@@ -35,10 +58,24 @@
       @include textspan-2;
       display: block;
       margin-bottom: 5px;
+      
+      @include screen('tablet-wide') {
+        margin-bottom: 0;
+      }
     }
     
     & + & {
       margin-top: 38px;
+      
+      @include screen('tablet-wide') {
+        margin-top: 14px;
+      }
+    }
+    
+    br {
+      @include screen('desktop') {
+        display: none;
+      }
     }
   }
   
@@ -47,16 +84,22 @@
     .app {
       
       &__wrapper {
-        margin-top: 100px;
+        @include screen('desktop', min) {
+          margin-top: 100px;
+        }
       }
       
       &__content {
-        padding-right: 20px;
-        padding-bottom: 28px;
+        @include screen('desktop', min) {
+          padding-right: 20px;
+          padding-bottom: 28px;
+        }
       }
       
       &__text-span {
-        margin-bottom: -8px;
+        @include screen('desktop', min) {
+          margin-bottom: -8px;
+        }
       }
     }
   }

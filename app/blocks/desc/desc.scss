@@ -4,10 +4,6 @@
   &__scheme {
     text-align: center;
     
-    img {
-      width: 100%;
-    }
-    
     &_eng img {
       max-width: 1080px;
       margin: 83px 0 0 40px;
@@ -16,6 +12,18 @@
     &_rus img {
       max-width: 950px;
       margin: 94px 57px 61px 0;
+    }
+    
+    img {
+      width: 100%;
+      
+      @include screen('desktop') {
+        margin: 40px 0;
+      }
+      
+      @include screen('tablet-small') {
+        margin: 30px 0;
+      }
     }
   }
   
@@ -26,8 +34,25 @@
     margin-top: 15px;
     padding-left: 18px;
     
+    @include screen('desktop') {
+      margin: 0 30px;
+      padding-left: 0;
+    }
+    
+    @include screen('tablet-wide') {
+      margin: 0;
+    }
+    
     & + & {
       margin-top: 31px;
+      
+      @include screen('tablet-wide') {
+        margin-top: 20px;
+      }
+      
+      @include screen('tablet-small') {
+        margin-top: 12px;
+      }
     }
   }
 }

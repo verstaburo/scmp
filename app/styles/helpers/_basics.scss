@@ -49,7 +49,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 html, body {
   margin: 0;
   padding: 0;
-  //overflow-x: hidden; // Убираем горизонтальный скролл
+  overflow-x: hidden; // Убираем горизонтальный скролл
   width: 100%;
   min-height: 100%;
 }
@@ -60,7 +60,6 @@ body {
   color: $color-basic;
   background-color: $color-bg;
   position: relative;
-  min-width: 1400px;
 }
 
 img {

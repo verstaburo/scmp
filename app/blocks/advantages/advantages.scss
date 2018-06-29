@@ -4,17 +4,48 @@
   &__list {
     padding-left: 480px;
     margin-top: 39px;
+    
+    @include screen('desktop') {
+      padding-left: 210px;
+    }
+    
+    @include screen('tablet-wide') {
+      padding-left: 0;
+      margin-top: 30px;
+    }
+    
+    @include screen('tablet-small') {
+      margin-top: 20px;
+    }
   }
   
   &__item {
     @include text;
+    
+    @include screen('tablet-wide') {
+      margin-top: 14px;
+    }
+    
+    @include screen('tablet-small') {
+      margin-top: 12px;
+    }
+    
+    br {
+      @include screen('tablet-small') {
+        display: none;
+      }
+    }
   }
   
   &_eng &__item + &__item {
-    margin-top: 26px;
+    @include screen('tablet-wide', min) {
+      margin-top: 26px;
+    }
   }
   
   &_rus &__item + &__item {
-    margin-top: 14px;
+    @include screen('tablet-wide', min) {
+      margin-top: 14px;
+    }
   }
 }

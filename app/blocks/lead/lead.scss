@@ -9,6 +9,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    @include screen('desktop') {
+      min-height: 670px;
+    }
+    
+    @include screen('tablet-wide') {
+      min-height: 520px;
+      padding: 140px 0 40px;
+    }
+    
+    @include screen('tablet') {
+      min-height: 0;
+    }
+    
+    @include screen('tablet-small') {
+      padding: 140px 0 100px;
+    }
   }
   
   &__bg {
@@ -16,6 +33,14 @@
     top: 0;
     left: 0;
     width: 100%;
+    
+    @include screen('desktop') {
+      width: auto;
+      min-width: 100%;
+      height: 152%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   
   &__wrapper {
@@ -23,6 +48,15 @@
     position: relative;
     padding-right: 16px;
     min-height: 310px;
+    
+    @include screen('tablet-wide') {
+      min-height: 270px;
+      padding-right: 0;
+    }
+    
+    @include screen('tablet-small') {
+      min-height: 0;
+    }
   }
   
   &__subheading {

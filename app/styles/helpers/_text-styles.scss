@@ -4,18 +4,58 @@
   font-size: 156px;
   font-weight: 400;
   letter-spacing: .03em;
+  
+  @include screen('desktop') {
+    font-size: 140px;
+  }
+  
+  @include screen('tablet-wide') {
+    font-size: 110px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 90px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 40px;
+  }
 }
 
 @mixin heading-2 {
   font-size: 61px;
   font-weight: 400;
   letter-spacing: .03em;
+  
+  @include screen('tablet-wide') {
+    font-size: 48px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 42px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 28px;
+  }
 }
 
 @mixin heading-3 {
   font-size: 50px;
   font-weight: 400;
   letter-spacing: -.005em;
+  
+  @include screen('tablet-wide') {
+    font-size: 40px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 36px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 24px;
+  }
 }
 
 @mixin heading-4 {
@@ -23,6 +63,18 @@
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -.005em;
+  
+  @include screen('tablet-wide') {
+    font-size: 32px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 28px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 20px;
+  }
 }
 
 @mixin heading-5 {
@@ -41,34 +93,90 @@
   font-size: 33px;
   font-weight: 400;
   line-height: 1.25;
+  
+  @include screen('tablet-wide') {
+    font-size: 28px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 26px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 18px;
+  }
 }
 
 @mixin text-large {
   font-size: 29px;
   font-weight: 400;
   line-height: 1.2;
+  
+  @include screen('tablet-wide') {
+    font-size: 24px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 22px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 16px;
+  }
 }
 
 @mixin text-big {
   font-size: 27px;
   font-weight: 400;
   line-height: 1.25;
+  
+  @include screen('tablet-wide') {
+    font-size: 22px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 20px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 16px;
+  }
 }
 
 @mixin text-medium {
   font-size: 25px;
   font-weight: 400;
+  
+  @include screen('tablet') {
+    font-size: 20px;
+  }
 }
 
 @mixin text {
   font-size: 21px;
   font-weight: 400;
+  
+  @include screen('tablet-wide') {
+    font-size: 20px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 18px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 16px;
+  }
 }
 
 @mixin text-small {
   font-size: 17px;
   font-weight: 300;
   line-height: 1.2;
+  
+  @include screen('tablet-small') {
+    font-size: 16px;
+  }
 }
 
 @mixin text-xsmall {
@@ -82,11 +190,35 @@
   font-weight: 700;
   letter-spacing: .04em;
   line-height: .8;
+  
+  @include screen('tablet-wide') {
+    font-size: 80px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 60px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 30px;
+  }
 }
 
 @mixin textspan-2 {
   font-size: 71px;
   font-weight: 700;
+  
+  @include screen('tablet-wide') {
+    font-size: 42px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 36px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 24px;
+  }
 }
 
 @mixin textspan-3 {
@@ -94,16 +226,64 @@
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -.045em;
+  
+  @include screen('tablet-wide') {
+    font-size: 40px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 32px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 20px;
+  }
 }
 
 @mixin textspan-4 {
   font-size: 46px;
+  
+  @include screen('tablet-wide') {
+    font-size: 36px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 28px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 18px;
+  }
 }
 
 @mixin textspan-5 {
   font-size: 42px;
+  
+  @include screen('tablet-wide') {
+    font-size: 32px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 24px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 18px;
+  }
 }
 
 @mixin textspan-6 {
   font-size: 38px;
+  
+  @include screen('tablet-wide') {
+    font-size: 28px;
+  }
+  
+  @include screen('tablet') {
+    font-size: 22px;
+  }
+  
+  @include screen('tablet-small') {
+    font-size: 16px;
+  }
 }

@@ -7,6 +7,20 @@
     @include heading-4;
     color: $color-blue;
     margin: 0 135px;
+    
+    @include screen('desktop') {
+      margin: 0 30px;
+    }
+    
+    @include screen('tablet-wide') {
+      margin: 0;
+    }
+    
+    br {
+      @include screen('desktop') {
+        display: none;
+      }
+    }
   }
   
   &__side-img {
@@ -20,11 +34,23 @@
     &_left {
       right: 100%;
       transform: translateX(485px);
+      
+      @include screen('desktop') {
+        transform: translateX(200px);
+      }
     }
     
     &_right {
       left: 100%;
       transform: translateX(-375px);
+      
+      @include screen('desktop') {
+        transform: translate(-100px);
+      }
+    }
+    
+    @include screen('tablet-wide') {
+      display: none;
     }
   }
   
@@ -33,6 +59,10 @@
     top: -92px;
     width: 234px;
     height: 313px;
+    
+    @include screen('desktop') {
+      display: none;
+    }
     
     &_right {
       right: 200px;
@@ -43,8 +73,14 @@
     padding-bottom: 52px;
     min-height: 1250px;
     
+    @include screen('desktop') {
+      min-height: 0;
+    }
+    
     .section__heading {
-      margin: 0 100px;
+      @include screen('desktop', min) {
+        margin: 0 100px;
+      }
       letter-spacing: -.015em;
     }
   }
@@ -52,6 +88,10 @@
   &_advantages {
     padding-bottom: 100px;
     min-height: 710px;
+    
+    @include screen('tablet-wide') {
+      min-height: 0;
+    }
   }
   
   &_platform {
@@ -62,7 +102,9 @@
     padding-bottom: 80px;
     
     .section__heading {
-      margin: 0 165px;
+      @include screen('desktop', min) {
+        margin: 0 165px;
+      }
     }
   }
   
@@ -72,5 +114,14 @@
     .section__heading {
       @include heading-3;
     }
+  }
+  
+  @include screen('tablet-wide') {
+    padding-bottom: 50px;
+  }
+  
+  @include screen('tablet-small') {
+    margin-top: 20px;
+    padding-bottom: 20px;
   }
 }

@@ -4,10 +4,6 @@
   &__scheme {
     text-align: center;
     
-    img {
-      width: 100%;
-    }
-    
     &_eng img {
       max-width: 1080px;
       margin: 102px 0 0 62px;
@@ -17,51 +13,92 @@
       max-width: 1230px;
       margin: 88px 0 63px;
     }
+    
+    img {
+      width: 100%;
+      
+      @include screen('desktop') {
+        margin: 60px 0;
+      }
+      
+      @include screen('tablet-wide') {
+        margin: 60px 0 40px;
+      }
+      
+      @include screen('tablet-small') {
+        margin: 30px 0;
+      }
+    }
   }
   
   &__content {
     margin: -34px 92px 0;
     padding-right: 15px;
     
+    @include screen('desktop') {
+      margin: 0 30px;
+      padding-right: 0;
+    }
+    
+    @include screen('tablet-wide') {
+      margin: 0;
+    }
+    
     &_eng {
       
       .platform__characteristic + .platform__characteristic {
-        margin-top: 2px;
+        @include screen('tablet-wide', min) {
+          margin-top: 2px;
+        }
       }
       
       .platform__characteristic + .platform__text {
-        margin-top: 40px;
+        @include screen('tablet-wide', min) {
+          margin-top: 40px;
+        }
       }
     }
     
     &_rus {
       
       .platform__characteristic + .platform__characteristic {
-        margin-top: 28px;
+        @include screen('tablet-wide', min) {
+          margin-top: 28px;
+        }
       }
       
       .platform__characteristic + .platform__text {
-        margin-top: 10px;
+        @include screen('tablet-wide', min) {
+          margin-top: 10px;
+        }
       }
       
       .platform__text_sp-l {
-        margin-top: 21px;
-        margin-left: 10px;
+        @include screen('tablet-wide', min) {
+          margin-top: 21px;
+          margin-left: 10px;
+        }
       }
       
       .platform__text_sp-r {
-        margin-top: 25px;
+        @include screen('tablet-wide', min) {
+          margin-top: 25px;
+        }
       }
       
       .platform__text_lv2 {
-        margin-top: 3px;
-        margin-left: 211px;
+        @include screen('tablet-wide', min) {
+          margin-top: 3px;
+          margin-left: 211px;
+        }
       }
       
       .platform__text_lv3 {
-        margin-top: 0;
-        margin-left: 150px;
-        margin-bottom: 7px;
+        @include screen('tablet-wide', min) {
+          margin-top: 0;
+          margin-left: 150px;
+          margin-bottom: 7px;
+        }
       }
     }
   }
@@ -73,8 +110,16 @@
     &-line {
       display: block;
       
+      @include screen('tablet-wide') {
+        display: inline;
+      }
+      
       &_right {
         text-align: right;
+        
+        @include screen('tablet-wide') {
+          text-align: left;
+        }
       }
     }
     
@@ -96,21 +141,49 @@
     
     &_sp-l {
       padding-left: 295px;
+      
+      @include screen('tablet-wide') {
+        padding-left: 0;
+      }
     }
     
     &_sp-r {
       margin-top: 14px;
       padding-right: 73px;
+      
+      @include screen('tablet-wide') {
+        padding-right: 0;
+      }
     }
     
     &_lv2 {
       margin-top: 12px;
       margin-left: 144px;
+      
+      @include screen('tablet-wide') {
+        margin-left: 0;
+      }
     }
     
     &_lv3 {
       margin-top: 28px;
       margin-left: 270px;
+      
+      @include screen('tablet-wide') {
+        margin-left: 0;
+      }
+    }
+    
+    & + & {
+      @include screen('tablet-wide') {
+        margin-top: 5px;
+      }
+    }
+    
+    br {
+      @include screen('tablet-wide') {
+        display: none;
+      }
     }
   }
   
@@ -120,9 +193,11 @@
     display: inline-block;
     
     &_sup {
-      vertical-align: top;
-      margin-top: -10px;
-      margin-bottom: 8px;
+      @include screen('desktop', min) {
+        vertical-align: top;
+        margin-top: -10px;
+        margin-bottom: 8px;
+      }
     }
   }
   
@@ -130,8 +205,18 @@
     display: flex;
     margin-top: 39px;
     
+    @include screen('tablet-wide') {
+      margin-top: 10px;
+    }
+    
     .platform__text {
       flex: 1;
+    }
+    
+    & + .platform__text {
+      @include screen('tablet-wide') {
+        margin-top: 10px;
+      }
     }
   }
   
@@ -141,9 +226,18 @@
     flex-shrink: 0;
     margin-right: 15px;
     
+    @include screen('tablet-small') {
+      margin-right: 6px;
+    }
+    
     &_right {
       margin-right: -8px;
       margin-left: 8px;
+      
+      @include screen('tablet-small') {
+        margin-right: 0;
+        margin-left: 6px;
+      }
     }
   }
 }
