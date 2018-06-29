@@ -121,6 +121,10 @@
     }
   }
   
+  &__address a {
+    color: inherit;
+  }
+  
   &__mail {
     color: inherit;
     display: inline-block;
