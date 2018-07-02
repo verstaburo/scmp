@@ -93,6 +93,7 @@
   font-size: 33px;
   font-weight: 400;
   line-height: 1.25;
+  letter-spacing: -.001em;
   
   @include screen('tablet-wide') {
     font-size: 28px;
@@ -155,6 +156,7 @@
 @mixin text {
   font-size: 21px;
   font-weight: 400;
+  letter-spacing: -.008em;
   
   @include screen('tablet-wide') {
     font-size: 20px;
@@ -173,6 +175,7 @@
   font-size: 17px;
   font-weight: 300;
   line-height: 1.2;
+  letter-spacing: -.01em;
   
   @include screen('tablet-small') {
     font-size: 16px;
@@ -182,7 +185,7 @@
 @mixin text-xsmall {
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: -.01em;
+  letter-spacing: -.03em;
 }
 
 @mixin textspan-1 {
